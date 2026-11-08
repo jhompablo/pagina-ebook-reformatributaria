@@ -1,0 +1,229 @@
+:root {
+            --navy: #0f2a52;
+            --ink: #4a5a74;
+            --cream: #f7f2e4;
+            --cream2: #f0e8d2;
+            --amber: #f2b84b;
+            --line: #e3dac0
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: var(--cream);
+            color: var(--ink);
+            font: 19px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            padding-bottom: 88px
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 6;
+            background: var(--cream);
+            border-bottom: 1px solid var(--line);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 18px
+        }
+
+        header b {
+            font-size: 21px;
+            color: var(--navy);
+            line-height: 1.15
+        }
+
+        .banner {
+            background: var(--navy);
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+            padding: 12px 16px;
+            font-size: 15px
+        }
+
+        main {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 22px 18px 0
+        }
+
+        h1 {
+            font-size: 40px;
+            line-height: 1.1;
+            color: var(--navy);
+            margin: 8px 0 14px;
+            font-weight: 800
+        }
+
+        h2 {
+            font-size: 38px;
+            line-height: 1.1;
+            color: var(--navy);
+            margin: 0 0 14px;
+            font-weight: 800
+        }
+
+        p {
+            margin: 0 0 16px
+        }
+
+        .sec {
+            background: var(--cream2);
+            border-radius: 36px;
+            padding: 28px 22px;
+            margin: 0 0 22px
+        }
+
+        .shot {
+            background: #fff;
+            border-radius: 26px;
+            padding: 10px;
+            box-shadow: 0 18px 40px rgba(15, 42, 82, .14);
+            margin: 0 0 24px
+        }
+
+        .shot img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 18px
+        }
+
+        .btn {
+            display: block;
+            background: var(--amber);
+            color: var(--navy);
+            border: 2px solid var(--navy);
+            border-radius: 999px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 19px;
+            padding: 16px 22px;
+            min-height: 52px
+        }
+
+        .btn:hover {
+            background: #e6a93a
+        }
+
+        a:focus-visible,
+        summary:focus-visible {
+            outline: 3px solid var(--navy);
+            outline-offset: 3px
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+
+        .chips li {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 7px 14px;
+            font-size: 16px;
+            color: var(--navy);
+            font-weight: 600
+        }
+
+        ol.ch {
+            margin: 0;
+            padding-left: 26px
+        }
+
+        ol.ch li {
+            padding: 5px 0
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--line);
+            font-size: 17px
+        }
+
+        .price {
+            font-size: 46px;
+            font-weight: 800;
+            color: var(--navy);
+            line-height: 1.1;
+            margin: 16px 0
+        }
+
+        .note {
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        details {
+            background: #fff;
+            border-radius: 18px;
+            padding: 16px 18px;
+            margin: 0 0 10px
+        }
+
+        summary {
+            font-weight: 700;
+            color: var(--navy);
+            cursor: pointer
+        }
+
+        details p {
+            margin: 10px 0 0;
+            font-size: 17px
+        }
+
+        footer {
+            background: var(--navy);
+            color: #e6ebf4;
+            text-align: center;
+            padding: 28px 20px;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 8px
+        }
+
+        .bar {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--cream);
+            border-top: 1px solid var(--line);
+            padding: 10px 16px;
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            justify-content: center;
+            z-index: 6
+        }
+
+        .bar b {
+            font-size: 22px;
+            color: var(--navy)
+        }
+
+        .bar .btn {
+            padding: 12px 26px;
+            font-size: 17px;
+            min-height: 48px
+        }
+
+        @media(min-width:700px) {
+            h1 {
+                font-size: 50px
+            }
+        }
