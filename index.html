@@ -122,6 +122,7 @@
                     <div class="row" style="border:0"><span>Garantia</span><span>7 dias</span></div>
                 </div>
                 <div>
+                    <p>De <del>R$ 49,90</del> por apenas</p>
                     <p class="price" data-preco></p>
                     <a class="btn cta" href="#checkout">Ir para o pagamento</a>
                     <p class="note" style="margin:12px 0 0">O pagamento é feito na página segura da plataforma de
@@ -160,12 +161,12 @@
     <footer>
         <p style="margin:0 0 8px">Material educativo e independente. Consulte a legislação e as orientações oficiais
             atualizadas. Não é uma publicação do governo e não substitui orientação profissional.</p>
-        <p style="margin:0">[SEU NOME OU RAZÃO SOCIAL] · [SEU CNPJ] · [SEU E-MAIL DE SUPORTE]</p>
+        <!-- <p style="margin:0">[SEU NOME OU RAZÃO SOCIAL] · [SEU CNPJ] · [SEU E-MAIL DE SUPORTE]</p> -->
     </footer>
-    <div class="bar"><b data-preco></b><a class="btn cta" href="#checkout">Quero o ebook</a></div>
+    <div class="bar"><a class="btn cta" href="#checkout">Quero o ebook</a></div>
     <script>
         // Edite aqui: preço, link do checkout (Hotmart, Kiwify, Eduzz, Mercado Pago, Stripe...) e data real da oferta.
-        var CONFIG = { preco: "[SEU PREÇO]", link: "#checkout", dataOferta: "" };
+        var CONFIG = { preco: "R$ 35,00", link: "#checkout", dataOferta: "" };
         document.querySelectorAll("[data-preco]").forEach(function (e) { e.textContent = CONFIG.preco; });
         document.querySelectorAll("a.cta").forEach(function (a) { a.href = CONFIG.link; });
         if (CONFIG.dataOferta) { document.getElementById("data").textContent = CONFIG.dataOferta; document.getElementById("banner").hidden = false; }
